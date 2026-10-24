@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C1A18" />
+      <stop offset="50%" stop-color="#24211E" />
+      <stop offset="100%" stop-color="#181614" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A59" />
+      <stop offset="100%" stop-color="#FFB347" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BD1B0" />
+      <stop offset="100%" stop-color="#76B894" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8BE9E" />
+      <stop offset="100%" stop-color="#CF9E76" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A2421" />
+      <stop offset="100%" stop-color="#161311" />
+    </linearGradient>
+    <linearGradient id="clothGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A322C" />
+      <stop offset="100%" stop-color="#231E1B" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="40" fill="url(#bgGrad)" />
+  
+  <!-- Subtle decorative tech grid / circles -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-opacity="0.35" stroke-dasharray="8 6" />
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#9BD1B0" stroke-width="1.5" stroke-opacity="0.25" />
+
+  <!-- Code brackets in background with editorial monospace -->
+  <text x="45" y="115" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="600" fill="#FF7A59" opacity="0.45">&lt;dev&gt;</text>
+  <text x="285" y="325" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="600" fill="#9BD1B0" opacity="0.45">&lt;/&gt;</text>
+
+  <!-- Avatar Illustration -->
+  <g transform="translate(0, 20)">
+    <!-- Hair back -->
+    <path d="M130,170 C120,240 120,270 140,310 C155,270 155,220 155,190 Z" fill="url(#hairGrad)" />
+    <path d="M270,170 C280,240 280,270 260,310 C245,270 245,220 245,190 Z" fill="url(#hairGrad)" />
+
+    <!-- Shoulders / Torso with Warm Charcoal / Terracotta collar -->
+    <path d="M110,360 C110,290 150,260 200,260 C250,260 290,290 290,360 Z" fill="url(#clothGrad)" />
+    <path d="M140,360 C150,300 180,280 200,280 C220,280 250,300 260,360 Z" fill="#2E2723" />
+    <path d="M175,275 L200,310 L225,275 Z" fill="url(#accentGrad)" opacity="0.8" />
+
+    <!-- Neck -->
+    <rect x="180" y="210" width="40" height="60" rx="10" fill="url(#skinGrad)" />
+    <!-- V-neck shadow -->
+    <path d="M185,250 L200,270 L215,250 Z" fill="#B07D56" opacity="0.4" />
+
+    <!-- Head / Face -->
+    <ellipse cx="200" cy="180" rx="52" ry="62" fill="url(#skinGrad)" />
+
+    <!-- Hair front / Style -->
+    <path d="M148,170 C145,120 170,105 200,105 C230,105 255,120 252,170 C240,135 220,130 200,130 C175,130 160,140 148,170 Z" fill="url(#hairGrad)" />
+    <!-- Side bangs -->
+    <path d="M150,165 C145,200 155,230 160,240 C155,210 152,190 155,170 Z" fill="url(#hairGrad)" />
+    <path d="M250,165 C255,200 245,230 240,240 C245,210 248,190 245,170 Z" fill="url(#hairGrad)" />
+
+    <!-- Stylish spectacles in Coral/Amber -->
+    <rect x="162" y="165" width="30" height="20" rx="6" fill="none" stroke="#FF7A59" stroke-width="2.5" />
+    <rect x="208" y="165" width="30" height="20" rx="6" fill="none" stroke="#FF7A59" stroke-width="2.5" />
+    <line x1="192" y1="174" x2="208" y2="174" stroke="#FF7A59" stroke-width="2.5" />
+    <!-- Eyes behind glasses -->
+    <circle cx="177" cy="175" r="4" fill="#24211E" />
+    <circle cx="223" cy="175" r="4" fill="#24211E" />
+    <!-- Catchlights -->
+    <circle cx="178" cy="173" r="1.5" fill="#FFFFFF" />
+    <circle cx="224" cy="173" r="1.5" fill="#FFFFFF" />
+
+    <!-- Eyebrows -->
+    <path d="M165,158 Q177,153 190,157" fill="none" stroke="#332B26" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M210,157 Q223,153 235,158" fill="none" stroke="#332B26" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Gentle Smile -->
+    <path d="M188,212 Q200,222 212,212" fill="none" stroke="#A84C3F" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Glowing Badge at Bottom with Warm Editorial Accent -->
+  <g transform="translate(125, 345)">
+    <rect x="0" y="0" width="150" height="32" rx="16" fill="#1C1A18" stroke="url(#accentGrad)" stroke-width="1.5" filter="url(#glow)" />
+    <circle cx="20" cy="16" r="5" fill="#9BD1B0" />
+    <text x="36" y="21" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="12" fill="#F5F0EA" letter-spacing="0.8">NIVITHA S</text>
+  </g>
+</svg>
